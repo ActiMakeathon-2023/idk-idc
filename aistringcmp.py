@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="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"
+    api_key=""
 )
 
 first_message = "OPERATOR: NORMAL STOP ACTUATED"
