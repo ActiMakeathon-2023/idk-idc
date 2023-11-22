@@ -14,8 +14,12 @@ def not_matching_gen(number, faultname, testname, y):
 
 canvas = Canvas("test.pdf")
 y = 800
-for number, faultname in [[123, "name"], [234, "aaa"]]:
-	missing_gen(number, faultname, y)
+for number in range(40):
+	missing_gen(number, "test", y)
 	y -= 36
+	if (y < 36):
+		canvas.showPage()
+		y = 800
+
 not_matching_gen(123, "name", "testname", y)
 canvas.save()
