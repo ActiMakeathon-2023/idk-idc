@@ -1,7 +1,7 @@
 from reportlab.pdfgen.canvas import Canvas
 
 def present_gen(number, faultname, testname, y, canvas):
-	text = str(number) + " : Test presented"
+	text = str(number) + " : Test is present"
 	canvas.drawString(20, y, text)
 	text = "Faultname: " + faultname
 	canvas.drawString(20, y - 15, text)
