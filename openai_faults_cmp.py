@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 client = OpenAI(
-    api_key = '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'
+    api_key = # insert openAI API key
 )
 
 # returns 1 or 0 by comparing with opeanAI api
