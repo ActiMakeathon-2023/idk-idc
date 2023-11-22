@@ -32,7 +32,7 @@ def unsafe_gen(number, faultname, y, canvas):
 
 def not_matching_gen(number, faultname, testname, y, canvas):
 	text = str(number) + " : Test not matching"
-	canvas.setFillColorRGB(0,0,1)
+	canvas.setFillColorRGB(1,0.5,0)
 	canvas.drawString(20, y, text)
 	text = "Faultname: " + faultname
 	canvas.setFillColorRGB(0,0,0)
